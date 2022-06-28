@@ -1,0 +1,25 @@
+.modal {
+    min-width: 528px;
+    min-height: 581px;
+    padding: 40px;
+
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.0);
+
+    background-color: $basic-background;
+    box-shadow: $box-sh-norm;
+    border-radius: 4px;
+
+    transition-property: transform;
+    transition-duration: 250ms, 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    .is-hidden>& {
+        transform: translate(-50%, -50%) scale(1.5);  
+    }
+}
+
+

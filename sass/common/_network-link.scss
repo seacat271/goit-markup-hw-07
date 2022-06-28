@@ -1,0 +1,53 @@
+.network {
+    display: flex;
+}
+
+.network__item {
+    width: 44px;
+    height: 44px;
+}
+
+.network__link {
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+    
+    border-radius: 50%;
+
+    color: $svg-color;
+    background-color: inherit;
+
+    transition: $bcg-transition, $color-transition;
+
+    &:hover,
+    &:focus {
+        color: $basic-background;
+        background-color: $attention-color;
+}
+}
+
+
+
+.network__icon {
+    fill: currentColor;
+}
+
+.network__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.network__link--dark {
+    color: $basic-background;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: $bcg-transition;
+    
+    &:hover,
+    &:focus {
+        background-color: $attention-color;
+    }
+}
+
+
