@@ -1,5 +1,5 @@
 .footer {
-    background-color: $attention-background;
+    background-color: getColor("attention-background");
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -9,7 +9,9 @@
     justify-content: space-between;
 }
 
-
+.address {
+    font-style: inherit;
+}
 
 .address__item {
     color: rgba(255, 255, 255, 0.6);
@@ -22,23 +24,23 @@
 }
 
 .address__link {
-    transition: $color-transition;
+    @include transition (color);
 
     &:hover,
     &:focus {
-    color: $attention-color;
+    color: getColor("attention");
 }
 }
 
 .address__link--light {
-    color: $basic-background;
+    color: getColor("basic-background");
 }
 
 
 
 .footer__title {
     display: block;
-    color: $basic-background;
+    color: getColor("basic-background");
     font-size: 14px;
     text-transform: uppercase;
     line-height: 1.14;
@@ -69,12 +71,11 @@
     font-size: inherit;
     outline: none;
    
-    border-width: 1px;
-    border-style: solid;
+    @extend %bordered;
     border-color: rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
+   
 
-    color: $basic-background;
+    color: getColor("basic-background");
     background-color: transparent;
 
     &::placeholder {

@@ -6,7 +6,7 @@
 
 .work__item {
     margin: 15px;
-    transition: $bsh-transition;
+    @include transition (box-shadow);
     
     &:hover,
     &:focus {
@@ -19,9 +19,7 @@
 
 
 .work__overlay {
-    transition-property: transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition (transform);
     
     .work__item:hover &,
     .work__item:focus & {
@@ -34,7 +32,7 @@
 .work__container {
     padding: 20px 24px;
     padding-bottom: 20px;
-    border-color: $border-color;
+    border-color: getColor("border");
     border-width: 1px;
     border-style: solid;
     border-top-width: 0;
@@ -61,12 +59,12 @@
 
     font-size: 18px;
     line-height: 1.56;
-    color: $basic-background;
+    color: getColor("basic-background");
     background-color: rgba(33, 150, 243, 0.9);
 }
 
 .work__title {
-    color: $title-color;
+    color: getColor("title");
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;

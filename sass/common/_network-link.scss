@@ -5,48 +5,44 @@
 .network__item {
     width: 44px;
     height: 44px;
+
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
 }
 
 .network__link {
     width: 100%;
     height: 100%;
     
-    display: flex;
-    justify-content: center;   
-    align-items: center;
+    @extend %flex-centered;
     
     border-radius: 50%;
 
-    color: $svg-color;
+    color: getColor("svg");
     background-color: inherit;
 
-    transition: $bcg-transition, $color-transition;
+    @include transition(color, background-color);
 
     &:hover,
     &:focus {
-        color: $basic-background;
-        background-color: $attention-color;
+        color: getColor("basic-background");
+        background-color: getColor("attention");
+    }
 }
-}
-
-
 
 .network__icon {
     fill: currentColor;
 }
 
-.network__item:not(:last-child) {
-    margin-right: 10px;
-}
-
 .network__link--dark {
-    color: $basic-background;
+    color: getColor("basic-background");
     background-color: rgba(255, 255, 255, 0.1);
-    transition: $bcg-transition;
+    @include transition(background-color);
     
     &:hover,
     &:focus {
-        background-color: $attention-color;
+        background-color: getColor("attention");
     }
 }
 

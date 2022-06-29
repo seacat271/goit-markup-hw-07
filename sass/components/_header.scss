@@ -33,11 +33,11 @@
 .header__item--dark {
     position: relative;
 
-    color: $title-color;
+    color: getColor("title");
 }
 
 .header__item--current {
-    color: $attention-color;
+    color: getColor("attention");
 
     &::after {
         width: 100%;
@@ -49,7 +49,7 @@
         content: "";
     
         border-radius: 2px;
-        background-color: $attention-color;
+        background-color: getColor("attention");
     }
 }
 
@@ -60,11 +60,11 @@
 }
 
 .header__link {
-    transition: $color-transition;
+    @include transition (color);
 
     &:hover,
     &:focus {
-        color: $attention-color;
+        color: getColor("attention");
     }    
 }
 

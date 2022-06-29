@@ -1,5 +1,5 @@
 .staff__section {
-    background-color: $second-background;
+    background-color: getColor("second-background");
 }
 
 .staff {
@@ -30,7 +30,7 @@
     line-height: 1.19; 
 
     border-radius: inherit;
-    background-color: $basic-background;
+    background-color: getColor("basic-background");
 }
 
 .staff__name {
@@ -39,7 +39,7 @@
     font-size: 16px;
     font-weight: 500;
    
-    color: $title-color;
+    color: getColor("title");
 }
 
 .staff__position {

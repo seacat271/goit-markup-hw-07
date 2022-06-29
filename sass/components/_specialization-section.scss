@@ -33,6 +33,6 @@
     text-align: center;
     text-transform: uppercase;
 
-    color: $basic-background;
+    color: getColor("basic-background");
     background-color: rgba(47, 48, 58, 0.8);
 }

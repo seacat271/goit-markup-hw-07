@@ -17,7 +17,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-color: $attention-background;
+    background-color: getColor("attention-background");
 }
 
 .hero__container {
@@ -35,6 +35,6 @@
     text-transform: uppercase;
     text-align: center;
 
-    color: $basic-background;
+    color: getColor("basic-background");
 }
 

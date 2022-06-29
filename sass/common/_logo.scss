@@ -1,23 +1,21 @@
 .logo {
     margin-right: 93px;
 
-    font-family: 'Raleway', sans-serif;
+    font-family: $secondary-font-fam;
     font-size: 26px;
     font-weight: 700;
     line-height: 1.19;
 
-    color: $logo-color;
-
-    
+    color: getColor("logo");  
 }
 
 .logo__web {
-    color: $attention-color;
+    color: getColor("attention");
 }
 
 
 .logo--darktheme {
-    color: $basic-background;
+    color: getColor("basic-background");
     margin-right: 0;
     margin-bottom: 20px;
     display: block;

@@ -6,23 +6,19 @@
     width: 170px;
     height: 92px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex-centered;
 
-    border-width: 1px;
-    border-radius: 4px;
-    color: $svg-color;
-    border-color: $svg-color;
-    border-style: solid;
-
-    transition: $color-transition, $bcg-transition;
+    @extend %bordered;
+    border-color: getColor("svg");
+    color: getColor("svg");
+    
+    @include transition(color, background-color);
 
 
     &:hover,
     &:focus {
-    color: $attention-color;
-    border-color: $attention-color;
+    color: getColor("attention");
+    border-color: getColor("attention");
 }
 }
 
