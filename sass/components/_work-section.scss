@@ -1,4 +1,4 @@
-.work {
+.work__list {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
@@ -15,19 +15,6 @@
                     1px 4px 6px rgba(0, 0, 0, 0.16);
     }
 }
-
-
-
-.work__overlay {
-    @include transition (transform);
-    
-    .work__item:hover &,
-    .work__item:focus & {
-    transform: translateY(-100%);
-    }
-}
-
-
 
 .work__container {
     padding: 20px 24px;
@@ -52,6 +39,13 @@
     height: 100%;    
     width: 100%;
     position: absolute;
+
+    @include transition (transform);
+    
+    .work__item:hover &,
+    .work__item:focus & {
+    transform: translateY(-100%);
+    }
 }
 
 .work__description {

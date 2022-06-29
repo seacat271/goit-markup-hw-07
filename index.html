@@ -63,16 +63,16 @@
       </div>
     </header>
     <main>
-      <section class="hero__section section">
+      <section class="hero section">
         <div class="hero__container container">
-          <h1 class="section-title section-title--hero">Эффективные решения для вашего бизнеса</h1>
+          <h1 class="hero__section-title section-title">Эффективные решения для вашего бизнеса</h1>
           <button class="button-submit--hero button-submit button" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
-      <section class="section">
+      <section class="principles section">
         <div class="container">
           <h2 class="section-title visually-hidden">Наши принципы</h2>
-          <ul class="principles list">
+          <ul class="principles__list">
             <li class="principle__item">
              <div class="principle__container">
               <svg class="principle__icon" width="70" height="70">
@@ -120,10 +120,10 @@
           </ul>
         </div>
       </section>
-      <section class="specialization__section section">
+      <section class="specialization section">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
-          <ul class="specialization list">
+          <ul class="specialization__list">
             <li class="specialization__item">
               <div class="specialization__position">
                 <img class="specialization__image" src="./images/layout.jpg" alt="верстка сайтов" width="370" />
@@ -145,10 +145,10 @@
           </ul>
         </div>
       </section>
-      <section class="staff__section section">
+      <section class="staff section">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
-          <ul class="staff list">
+          <ul class="staff__list list">
             <li class="staff__item">
               <img class="staff__image" src="./images/product-designer.jpg" alt="мужчина улыбается" width="270" />
               <div class="staff__container">
@@ -364,10 +364,10 @@
           </ul>
         </div>
       </section>
-      <section class="section">
+      <section class="client section">
         <div class="container">
         <h2 class="section-title">Постоянные клиенты</h2>
-        <ul class="client list">
+        <ul class="client__list list">
           <li class="client__item">
             <a  href="" 
                 class="client__link link"
@@ -497,10 +497,10 @@
           </div>
           <div class="footer__mail">
             <strong class="footer__title">Подпишитесь на рассылку</strong>
-            <form class="mail__form">
-              <label class="mail__label" for="footer"></label>
+            <form class="mail-form">
+              <label class="mail-form__label" for="footer"></label>
                 <input 
-                  class="mail__input"
+                  class="mail-form__input"
                   placeholder="E-mail"
                   id="footer" 
                   type="email" 
@@ -566,7 +566,7 @@
               <textarea class="form__input" placeholder="Введите текст" name="comment" id="comment" cols="26" rows="6"></textarea>
             </li>
           </ul>
-          <div class="form__license">
+          <div class="license">
           <label class="license__label" for="license">
               <input 
               class="license__input visually-hidden"
@@ -575,10 +575,10 @@
               value="true" 
               name="license"
               required />
-              <svg class="icon-choice--unchecked icon-choice" width="16" height="15">
+              <svg class="license__icon-choice--unchecked license__icon-choice" width="16" height="15">
                 <use href="./images/svg/icons.svg#icon-Vector-1-1"></use>
               </svg>
-              <svg class="icon-choice--checked icon-choice" width="16" height="15">
+              <svg class="license__icon-choice--checked license__icon-choice" width="16" height="15">
                 <use href="./images/svg/icons.svg#icon-icon-check"></use>
               </svg>
               <span class="license__text">Соглашаюсь с рассылкой и принимаю 

@@ -89,11 +89,15 @@
     }
 }
 
+.license {
+    margin-bottom: 30px;
+}
+
 .license__label {
     @extend %flex-centered;
 }
 
-.license__input:checked + .icon-choice--unchecked {
+.license__input:checked + .license__icon-choice--unchecked {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -106,7 +110,7 @@
     overflow: hidden;
 }
 
-.license__input:not(:checked) ~ .icon-choice--checked {
+.license__input:not(:checked) ~ .license__icon-choice--checked {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -120,17 +124,13 @@
 }
 
 
-.icon-choice {
+.license__icon-choice {
     margin-right: 7px;
 }
 
-.form__license,
+.license,
 .form__submit {
     text-align: center;
-}
-
-.form__license {
-    margin-bottom: 30px;
 }
 
 .license__text  {
